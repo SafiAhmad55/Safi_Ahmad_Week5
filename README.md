@@ -242,7 +242,7 @@ Displays individual task information including:
 
 ## Project API Endpoints
 
-The Task Management module integrates with the existing Project Management APIs to associate tasks with projects.
+The Task Management module integrates with the existing Project Management APIs.
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -255,6 +255,7 @@ The Task Management module integrates with the existing Project Management APIs 
 | PUT | `/api/projects/:id` | Update a project |
 | DELETE | `/api/projects/:id` | Delete a project |
 
+All Project API endpoints require JWT authentication.
 ## Conclusion
 
 The Week 5 Task Management and Team Assignment module provides a complete solution for creating, assigning, managing, and tracking project tasks. It integrates with the existing authentication and Project Management modules and provides features such as CRUD operations, employee assignment, priorities, statuses, search, and filtering. The React frontend and Node.js/Express backend work together with MongoDB Atlas to provide a functional and organized task management system
