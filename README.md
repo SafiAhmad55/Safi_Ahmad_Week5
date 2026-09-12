@@ -79,56 +79,6 @@ The Task Management module integrates with the existing Project Management APIs.
 | PUT | `/api/projects/:id` | Update a project |
 | DELETE | `/api/projects/:id` | Delete a project |
 
----
-
-
-## Project Structure
-
-```text
-week5/
-├── backend/
-│   ├── middleware/
-│   │   └── auth.js
-│   │
-│   ├── models/
-│   │   ├── Client.js
-│   │   ├── Project.js
-│   │   ├── Task.js
-│   │   └── User.js
-│   │
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── clients.js
-│   │   ├── projects.js
-│   │   └── tasks.js
-│   │
-│   ├── .gitignore
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
-│
-├── frontend/
-│   ├── src/
-│   │   ├── assets/
-│   │   │
-│   │   ├── components/
-│   │   │   ├── TaskDetails.jsx
-│   │   │   ├── TaskFilters.jsx
-│   │   │   ├── TaskForm.jsx
-│   │   │   └── TaskList.jsx
-│   │   │
-│   │   ├── App.css
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   └── main.jsx
-│   │
-│   ├── .gitignore
-│   ├── package.json
-│   ├── package-lock.json
-│   └── vite.config.js
-│
-├── README.md
-└── Safi_Ahmad_Week5.postman_collection.json
 
 ## Main Features
 
@@ -254,6 +204,57 @@ Displays individual task information including:
 - Due date
 - Edit button
 - Delete button
+
+---
+
+
+## Project Structure
+
+```text
+week5/
+├── backend/
+│   ├── middleware/
+│   │   └── auth.js
+│   │
+│   ├── models/
+│   │   ├── Client.js
+│   │   ├── Project.js
+│   │   ├── Task.js
+│   │   └── User.js
+│   │
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── clients.js
+│   │   ├── projects.js
+│   │   └── tasks.js
+│   │
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── TaskDetails.jsx
+│   │   │   ├── TaskFilters.jsx
+│   │   │   ├── TaskForm.jsx
+│   │   │   └── TaskList.jsx
+│   │   │
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   │
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── README.md
+└── Safi_Ahmad_Week5.postman_collection.json
 
 ## Conclusion
 
