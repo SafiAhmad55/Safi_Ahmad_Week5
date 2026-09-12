@@ -71,7 +71,6 @@ The Task Management module supports the following fields:
 
 ```text
 week5/
-│
 ├── backend/
 │   ├── middleware/
 │   │   └── auth.js
@@ -88,7 +87,6 @@ week5/
 │   │   ├── projects.js
 │   │   └── tasks.js
 │   │
-│   ├── .env
 │   ├── .gitignore
 │   ├── package.json
 │   ├── package-lock.json
@@ -114,7 +112,8 @@ week5/
 │   ├── package-lock.json
 │   └── vite.config.js
 │
-└── README.md
+├── README.md
+└── Safi_Ahmad_Week5.postman_collection.json
 
 ## Main Features
 
