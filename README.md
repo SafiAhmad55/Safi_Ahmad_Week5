@@ -64,6 +64,21 @@ The Task Management module supports the following fields:
 | Due Date | Deadline of the task |
 | Status | To Do, In Progress, Review, or Completed |
 
+## Project API Endpoints
+
+The Task Management module integrates with the existing Project Management APIs.
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/projects` | Create a project |
+| GET | `/api/projects` | Get all projects |
+| GET | `/api/projects/:id` | Get project details |
+| GET | `/api/projects?search=amazon` | Search projects |
+| GET | `/api/projects?status=Completed` | Filter projects by status |
+| GET | `/api/projects?client=CLIENT_ID` | Filter projects by client |
+| PUT | `/api/projects/:id` | Update a project |
+| DELETE | `/api/projects/:id` | Delete a project |
+
 ---
 
 
@@ -240,22 +255,6 @@ Displays individual task information including:
 - Edit button
 - Delete button
 
-## Project API Endpoints
-
-The Task Management module integrates with the existing Project Management APIs.
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/api/projects` | Create a project |
-| GET | `/api/projects` | Get all projects |
-| GET | `/api/projects/:id` | Get project details |
-| GET | `/api/projects?search=amazon` | Search projects |
-| GET | `/api/projects?status=Completed` | Filter projects by status |
-| GET | `/api/projects?client=CLIENT_ID` | Filter projects by client |
-| PUT | `/api/projects/:id` | Update a project |
-| DELETE | `/api/projects/:id` | Delete a project |
-
-All Project API endpoints require JWT authentication.
 ## Conclusion
 
 The Week 5 Task Management and Team Assignment module provides a complete solution for creating, assigning, managing, and tracking project tasks. It integrates with the existing authentication and Project Management modules and provides features such as CRUD operations, employee assignment, priorities, statuses, search, and filtering. The React frontend and Node.js/Express backend work together with MongoDB Atlas to provide a functional and organized task management system
