@@ -1,0 +1,1218 @@
+{
+  "info": {
+    "_postman_id": "9d7d9a14-9b4e-4944-afa1-905e5068e1a6",
+    "name": "Safi_Ahmad_Week5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57417114",
+    "_collection_link": "https://go.postman.co/collection/57417114-9d7d9a14-9b4e-4944-afa1-905e5068e1a6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"bachakhan@example.com\",\r\n  \"password\": \"bacha111#\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5001/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "login_admin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"bachakhan@example.com\",\r\n  \"password\": \"bacha111#\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "385"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"181-3oJ9wvjqMKEP0ApUXyU9vufUXMI\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 02 Sep 2026 18:12:23 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Login successful\",\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOTg2NWZhOTJmMmMyYWRlZjQ2NzJhYSIsImVtYWlsIjoiYmFjaGFraGFuQGV4YW1wbGUuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzg4MzcyNzQzLCJleHAiOjE3ODgzNzYzNDN9.IM5b_-ajM2oCplN2gLdSmTK_BUUXYD23xaBxwGrBpso\",\n  \"user\": {\n    \"id\": \"6a9865fa92f2c2adef4672aa\",\n    \"username\": \"bachakhan\",\n    \"email\": \"bachakhan@example.com\",\n    \"role\": \"Admin\"\n  }\n}"
+        },
+        {
+          "name": "login_employee",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"khannajar110@example.com\",\r\n  \"password\": \"01849r48HH\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "401"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"191-rHRFVhyTsQx2gfYDNK+9nco3q48\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 03 Sep 2026 18:40:55 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Login successful\",\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOTliZWY3OWQxZjNiNzRkYjhlYmU2MSIsImVtYWlsIjoia2hhbm5hamFyMTEwQGV4YW1wbGUuY29tIiwicm9sZSI6IkVtcGxveWVlIiwiaWF0IjoxNzg4NDYwODU1LCJleHAiOjE3ODg0NjQ0NTV9.VpEUK2kWL97QfL-d3q9wiPZKyslSno4rtvUeibvXV74\",\n  \"user\": {\n    \"id\": \"6a99bef79d1f3b74db8ebe61\",\n    \"username\": \"khannajar11\",\n    \"email\": \"khannajar110@example.com\",\n    \"role\": \"Employee\"\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5001/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "tasks_view",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "1236"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"4d4-QoiFgEhMwzfVc7ZCNqDfwnNNM9k\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:41:29 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Tasks fetched successfully\",\n  \"tasks\": [\n    {\n      \"_id\": \"6aa2e22499b521c2bbcaf663\",\n      \"title\": \"Database Testing\",\n      \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a85a66823a30370f97b0fd0\",\n        \"username\": \"kabkhan\",\n        \"email\": \"naveed@outlook.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"Medium\",\n      \"dueDate\": \"2027-03-19T19:00:00.000Z\",\n      \"status\": \"In Progress\",\n      \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n      \"updatedAt\": \"2026-09-10T17:00:20.265Z\",\n      \"__v\": 0\n    },\n    {\n      \"_id\": \"6aa2d20ab90ab3873694a219\",\n      \"title\": \"Design Homepage\",\n      \"description\": \"Create the homepage design for the project.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a99bef79d1f3b74db8ebe61\",\n        \"username\": \"khannajar11\",\n        \"email\": \"khannajar110@example.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"High\",\n      \"dueDate\": \"2026-09-20T00:00:00.000Z\",\n      \"status\": \"To Do\",\n      \"createdAt\": \"2026-09-10T15:51:38.819Z\",\n      \"updatedAt\": \"2026-09-10T15:51:38.819Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "project_id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5001/api/projects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "projects"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "project_id",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/projects",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "projects"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "916"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"394-qP1ZeiLg+j/QuayXf51QH+1J1jk\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 15:24:50 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Projects fetched successfully\",\n  \"projects\": [\n    {\n      \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n      \"name\": \"Company Portfolio\",\n      \"description\": \"Design and development of a company portfolio website.\",\n      \"client\": {\n        \"_id\": \"6a8ebe631a0222c56201c19e\",\n        \"name\": \"nadeem jan\",\n        \"email\": \"nadeembobo590@gmail.com\",\n        \"company\": \"solution marker\"\n      },\n      \"startDate\": \"2026-09-10T00:00:00.000Z\",\n      \"deadline\": \"2026-10-20T00:00:00.000Z\",\n      \"status\": \"Completed\",\n      \"createdAt\": \"2026-09-03T16:51:53.288Z\",\n      \"updatedAt\": \"2026-09-03T16:51:53.288Z\",\n      \"__v\": 0\n    },\n    {\n      \"_id\": \"6a99a5349d1f3b74db8ebe5f\",\n      \"name\": \"E-Commerce Website\",\n      \"description\": \"Development of an online shopping website.\",\n      \"client\": {\n        \"_id\": \"6a8d75544d7a5b95b49a3654\",\n        \"name\": \"Ali Khan\",\n        \"email\": \"ali@gmail.com\",\n        \"company\": \"ABC Software\"\n      },\n      \"startDate\": \"2026-09-01T00:00:00.000Z\",\n      \"deadline\": \"2026-11-01T00:00:00.000Z\",\n      \"status\": \"Completed\",\n      \"createdAt\": \"2026-09-03T16:49:56.809Z\",\n      \"updatedAt\": \"2026-09-04T14:54:11.182Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "create_task",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Database Testing\",\r\n  \"description\": \"Test the project database and verify that all required data is stored correctly.\",\r\n  \"project\": \"6a99a5a99d1f3b74db8ebe60\",\r\n  \"assignedEmployee\": \"6a85a66823a30370f97b0fd0\",\r\n  \"priority\": \"Medium\",\r\n  \"dueDate\": \"2027-3-20\",\r\n  \"status\": \"In Progress\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5001/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "create_task",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Design Homepage\",\r\n  \"description\": \"Create the homepage design for the project.\",\r\n  \"project\": \"6a99a5a99d1f3b74db8ebe60\",\r\n  \"assignedEmployee\": \"6a99bef79d1f3b74db8ebe61\",\r\n  \"priority\": \"High\",\r\n  \"dueDate\": \"2026-09-20\",\r\n  \"status\": \"To Do\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "621"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"26d-0gNye5Wd+NBlps2QEfroQ/AEqyY\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 15:51:39 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Task created successfully\",\n  \"task\": {\n    \"_id\": \"6aa2d20ab90ab3873694a219\",\n    \"title\": \"Design Homepage\",\n    \"description\": \"Create the homepage design for the project.\",\n    \"project\": {\n      \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n      \"name\": \"Company Portfolio\",\n      \"description\": \"Design and development of a company portfolio website.\",\n      \"status\": \"Completed\"\n    },\n    \"assignedEmployee\": {\n      \"_id\": \"6a99bef79d1f3b74db8ebe61\",\n      \"username\": \"khannajar11\",\n      \"email\": \"khannajar110@example.com\",\n      \"role\": \"Employee\"\n    },\n    \"priority\": \"High\",\n    \"dueDate\": \"2026-09-20T00:00:00.000Z\",\n    \"status\": \"To Do\",\n    \"createdAt\": \"2026-09-10T15:51:38.819Z\",\n    \"updatedAt\": \"2026-09-10T15:51:38.819Z\",\n    \"__v\": 0\n  }\n}"
+        },
+        {
+          "name": "create_task_second",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Database Testing\",\r\n  \"description\": \"Test the project database and verify that all required data is stored correctly.\",\r\n  \"project\": \"6a99a5a99d1f3b74db8ebe60\",\r\n  \"assignedEmployee\": \"6a85a66823a30370f97b0fd0\",\r\n  \"priority\": \"Medium\",\r\n  \"dueDate\": \"2027-3-20\",\r\n  \"status\": \"In Progress\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "657"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"291-mezmQ4/TfPSUI+m/K+H1P8+WcFE\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:00:20 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Task created successfully\",\n  \"task\": {\n    \"_id\": \"6aa2e22499b521c2bbcaf663\",\n    \"title\": \"Database Testing\",\n    \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n    \"project\": {\n      \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n      \"name\": \"Company Portfolio\",\n      \"description\": \"Design and development of a company portfolio website.\",\n      \"status\": \"Completed\"\n    },\n    \"assignedEmployee\": {\n      \"_id\": \"6a85a66823a30370f97b0fd0\",\n      \"username\": \"kabkhan\",\n      \"email\": \"naveed@outlook.com\",\n      \"role\": \"Employee\"\n    },\n    \"priority\": \"Medium\",\n    \"dueDate\": \"2027-03-19T19:00:00.000Z\",\n    \"status\": \"In Progress\",\n    \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n    \"updatedAt\": \"2026-09-10T17:00:20.265Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "task_filtering",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5001/api/tasks?search=Database",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Database"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "task_filtering_priority_high",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks?priority=High",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "priority",
+                  "value": "High"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "625"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"271-XuWAM9jh7LqgnrbQlJUX2zs6e0E\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:12:32 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Tasks fetched successfully\",\n  \"tasks\": [\n    {\n      \"_id\": \"6aa2d20ab90ab3873694a219\",\n      \"title\": \"Design Homepage\",\n      \"description\": \"Create the homepage design for the project.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a99bef79d1f3b74db8ebe61\",\n        \"username\": \"khannajar11\",\n        \"email\": \"khannajar110@example.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"High\",\n      \"dueDate\": \"2026-09-20T00:00:00.000Z\",\n      \"status\": \"To Do\",\n      \"createdAt\": \"2026-09-10T15:51:38.819Z\",\n      \"updatedAt\": \"2026-09-10T15:51:38.819Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        },
+        {
+          "name": "task_filtering_priority_medium",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks?priority=Medium",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "priority",
+                  "value": "Medium"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "661"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"295-bn9maMNc+RjC0uG1/bwVONSCqCU\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:13:54 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Tasks fetched successfully\",\n  \"tasks\": [\n    {\n      \"_id\": \"6aa2e22499b521c2bbcaf663\",\n      \"title\": \"Database Testing\",\n      \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a85a66823a30370f97b0fd0\",\n        \"username\": \"kabkhan\",\n        \"email\": \"naveed@outlook.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"Medium\",\n      \"dueDate\": \"2027-03-19T19:00:00.000Z\",\n      \"status\": \"In Progress\",\n      \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n      \"updatedAt\": \"2026-09-10T17:00:20.265Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        },
+        {
+          "name": "task_filtering_status",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks?status=To%20Do",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "To%20Do"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "625"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"271-XuWAM9jh7LqgnrbQlJUX2zs6e0E\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:19:30 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Tasks fetched successfully\",\n  \"tasks\": [\n    {\n      \"_id\": \"6aa2d20ab90ab3873694a219\",\n      \"title\": \"Design Homepage\",\n      \"description\": \"Create the homepage design for the project.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a99bef79d1f3b74db8ebe61\",\n        \"username\": \"khannajar11\",\n        \"email\": \"khannajar110@example.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"High\",\n      \"dueDate\": \"2026-09-20T00:00:00.000Z\",\n      \"status\": \"To Do\",\n      \"createdAt\": \"2026-09-10T15:51:38.819Z\",\n      \"updatedAt\": \"2026-09-10T15:51:38.819Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        },
+        {
+          "name": "task_search",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks?search=Database",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Database"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "661"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"295-bn9maMNc+RjC0uG1/bwVONSCqCU\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:20:50 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Tasks fetched successfully\",\n  \"tasks\": [\n    {\n      \"_id\": \"6aa2e22499b521c2bbcaf663\",\n      \"title\": \"Database Testing\",\n      \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n      \"project\": {\n        \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n        \"name\": \"Company Portfolio\",\n        \"description\": \"Design and development of a company portfolio website.\",\n        \"status\": \"Completed\"\n      },\n      \"assignedEmployee\": {\n        \"_id\": \"6a85a66823a30370f97b0fd0\",\n        \"username\": \"kabkhan\",\n        \"email\": \"naveed@outlook.com\",\n        \"role\": \"Employee\"\n      },\n      \"priority\": \"Medium\",\n      \"dueDate\": \"2027-03-19T19:00:00.000Z\",\n      \"status\": \"In Progress\",\n      \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n      \"updatedAt\": \"2026-09-10T17:00:20.265Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "update_task",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Database Testing\",\r\n  \"description\": \"Test the project database and verify that all required data is stored correctly.\",\r\n  \"project\": \"6a99a5a99d1f3b74db8ebe60\",\r\n  \"assignedEmployee\": \"6a85a66823a30370f97b0fd0\",\r\n  \"priority\": \"Medium\",\r\n  \"dueDate\": \"2027-03-19\",\r\n  \"status\": \"Completed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5001/api/tasks/6aa2e22499b521c2bbcaf663",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "tasks",
+            "6aa2e22499b521c2bbcaf663"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "update_task",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Database Testing\",\r\n  \"description\": \"Test the project database and verify that all required data is stored correctly.\",\r\n  \"project\": \"6a99a5a99d1f3b74db8ebe60\",\r\n  \"assignedEmployee\": \"6a85a66823a30370f97b0fd0\",\r\n  \"priority\": \"Medium\",\r\n  \"dueDate\": \"2027-03-19\",\r\n  \"status\": \"Completed\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/tasks/6aa2e22499b521c2bbcaf663",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks",
+                "6aa2e22499b521c2bbcaf663"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "655"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"28f-tQsUDSZHZBgXORE1RM0t8MAHpc4\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 17:48:01 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Task updated successfully\",\n  \"task\": {\n    \"_id\": \"6aa2e22499b521c2bbcaf663\",\n    \"title\": \"Database Testing\",\n    \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n    \"project\": {\n      \"_id\": \"6a99a5a99d1f3b74db8ebe60\",\n      \"name\": \"Company Portfolio\",\n      \"description\": \"Design and development of a company portfolio website.\",\n      \"status\": \"Completed\"\n    },\n    \"assignedEmployee\": {\n      \"_id\": \"6a85a66823a30370f97b0fd0\",\n      \"username\": \"kabkhan\",\n      \"email\": \"naveed@outlook.com\",\n      \"role\": \"Employee\"\n    },\n    \"priority\": \"Medium\",\n    \"dueDate\": \"2027-03-19T00:00:00.000Z\",\n    \"status\": \"Completed\",\n    \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n    \"updatedAt\": \"2026-09-10T17:48:01.493Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "delete_task",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5001/api/tasks/6aa2d20ab90ab3873694a219",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "tasks",
+            "6aa2d20ab90ab3873694a219"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "delete_task_admin",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/tasks/6aa2e22499b521c2bbcaf663",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks",
+                "6aa2e22499b521c2bbcaf663"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "452"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"1c4-eKDU1FuJ7cIikftMDsCo8FJUJGc\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 18:03:03 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Task deleted successfully\",\n  \"task\": {\n    \"_id\": \"6aa2e22499b521c2bbcaf663\",\n    \"title\": \"Database Testing\",\n    \"description\": \"Test the project database and verify that all required data is stored correctly.\",\n    \"project\": \"6a99a5a99d1f3b74db8ebe60\",\n    \"assignedEmployee\": \"6a85a66823a30370f97b0fd0\",\n    \"priority\": \"Medium\",\n    \"dueDate\": \"2027-03-19T00:00:00.000Z\",\n    \"status\": \"Completed\",\n    \"createdAt\": \"2026-09-10T17:00:20.265Z\",\n    \"updatedAt\": \"2026-09-10T17:48:01.493Z\",\n    \"__v\": 0\n  }\n}"
+        },
+        {
+          "name": "delete_task_employee",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/tasks/6aa2d20ab90ab3873694a219",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "tasks",
+                "6aa2d20ab90ab3873694a219"
+              ]
+            }
+          },
+          "status": "Forbidden",
+          "code": 403,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "41"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"29-Ffv5vSLF3HFnJXgXlxiWqZ3Yg58\""
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 18:06:04 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Access denied. Admins only.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "employees_display",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5001/api/auth/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5001",
+          "path": [
+            "api",
+            "auth",
+            "employees"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "employees_display",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/auth/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "auth",
+                "employees"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "377"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"179-x+5C9z3x364JKqy0AMXLD6+ZTPQ\""
+            },
+            {
+              "key": "date",
+              "value": "Sat, 12 Sep 2026 08:31:40 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Employees fetched successfully\",\n  \"employees\": [\n    {\n      \"_id\": \"6a8891ecd3bd1b7217e008df\",\n      \"username\": \"asdfgghh\",\n      \"email\": \"gmail12@gmail.com\",\n      \"role\": \"Employee\"\n    },\n    {\n      \"_id\": \"6a85a66823a30370f97b0fd0\",\n      \"username\": \"kabkhan\",\n      \"email\": \"naveed@outlook.com\",\n      \"role\": \"Employee\"\n    },\n    {\n      \"_id\": \"6a99bef79d1f3b74db8ebe61\",\n      \"username\": \"khannajar11\",\n      \"email\": \"khannajar110@example.com\",\n      \"role\": \"Employee\"\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ]
+}
